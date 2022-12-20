@@ -245,7 +245,7 @@ class Captcha
      * @return array|mixed
      * @throws Exception
      */
-    public function create(string $config = 'default', bool $api = false)
+    public function create(string $config = 'default', bool $api = true)
     {
         $this->backgrounds = $this->files->files(__DIR__ . '/../assets/backgrounds');
         $this->fonts = $this->files->files($this->fontsDirectory);
